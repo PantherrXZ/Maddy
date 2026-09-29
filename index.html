@@ -7,65 +7,66 @@
 
     <title>MADDY</title>
 
-    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
 <body>
-    <header>
+    <header class="flex items-center justify-between h-[66px] px-[30px]">
         <div>
             MADDY
         </div>
 
-        <nav>
-            <a href="#">SHOP</a>
-            <a href="#">ABOUT</a>
-            <a href="#">CONTACT</a>
+        <nav class="flex gap-[30px]">
+            <a href="#" class="text-[12px]">SHOP</a>
+            <a href="#" class="text-[12px]">ABOUT</a>
+            <a href="#" class="text-[12px]">CONTACT</a>
         </nav>
     
-        <div class="actions">
-            <button>SEARCH</button>
-            <button>BAG</button>
+        <div class="flex gap-[20px]">
+            <button class="text-[12px] bg-transparent border-0">SEARCH</button>
+            <button class="text-[12px] bg-transparent border-0">BAG</button>
         </div>
-        
     </header>
 
     <main>
+        <section class="relative w-full h-[calc(100vh-66px)] overflow-hidden bg-[#f7f6f9]
+        bg-[linear-gradient(to_right,rgba(0,0,0,0.08)_1px,transparent_1px),linear-gradient(to_bottom,rgba(0,0,0,0.08)_1px,transparent_1px)]
+        bg-[size:20%_25%]">
 
-        <section class="hero">
-
-            <div class="hero-text">
-
-                <p>
+            <div class="absolute left-[5vw] top-[25%] w-[20vw] z-30"></div>
+                <p class="text-[12px] leading-[1.5]">
                     MADDY IS BUILT FOR THOSE WHO
                     CHOOSE FORM OVER NOISE —
                     AND LET THE WORK SPEAK
                     WHERE WORDS DON'T HAVE TO
                 </p>
+            </div>
 
-                <button class="shop-btn">
+                <button  class="mt-[30px] px-[20px] py-[12px] border border-black bg-transparent text-[11px]">
                     SHOP THE DROP →
                 </button>
 
-            </div>
+            <img src="assets/model.jpg" alt="MADDY fashion model"
+                class="absolute left-1/2 bottom-0 -translate-x-1/2 w-[45vw]">
 
-            <img class="hero-model" src="assets/model.jpg" alt="MADDY fashion model">
-
-            <h1 class="hero-title">
+            <h1 class="absolute left-1/2 bottom-[8vh] -translate-x-1/2 z-20 text-[10vw] font-normal whitespace-nowrap">
             SPEAK QUIET
             </h1>
 
-            <div class="hero-description">
+            <div class="absolute right-[5vw] top-[25%] w-[12vw] z-30">
+                <p class="text-[11px] leading-[1.5]">
+                    FASHION WITHOUT THE SHOUT
+                </p>
 
-                <p>FASHION WITHOUT THE SHOUT</p>
-
-                <p>A QUIET ANSWER TO LOUD FASHION BRANDING</p>
-
+                <p class="mt-[30px] text-[11px] leading-[1.5]">
+                    A QUIET ANSWER TO LOUD FASHION BRANDING
+                </p>
             </div>
 
         </section>
 
     </main>
-
+    <script src="script.js"></script>
 
 </body>
 </html>
