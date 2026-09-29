@@ -11,55 +11,94 @@
 </head>
 
 <body>
-    <header class="flex items-center justify-between h-[66px] px-[30px]">
-        <div>
+    <header class="flex items-center justify-between h-[70px] px-[30px]">
+        <div class="font-semibold text-[23px]">
             MADDY
         </div>
 
-        <nav class="flex gap-[30px]">
-            <a href="#" class="text-[12px]">SHOP</a>
-            <a href="#" class="text-[12px]">ABOUT</a>
-            <a href="#" class="text-[12px]">CONTACT</a>
+        <nav class="flex gap-[60px] font-semibold">
+            <a href="#" class="text-[18px]">SHOP</a>
+            <a href="#" class="text-[18px]">ABOUT</a>
+            <a href="#" class="text-[18px]">CONTACT</a>
         </nav>
     
-        <div class="flex gap-[20px]">
-            <button class="text-[12px] bg-transparent border-0">SEARCH</button>
-            <button class="text-[12px] bg-transparent border-0">BAG</button>
+        <div class="flex gap-[20px] font-semibold">
+            <button class="flex items-center gap-[6px] text-[12px] font-semibold">
+                <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="1.8"
+                    class="w-[13px] h-[13px]"
+                >
+                    <circle cx="11" cy="11" r="7"></circle>
+                    <path d="M20 20L16.5 16.5"></path>
+                </svg>
+
+                <span>SEARCH</span>
+            </button>
+
+            <button class="flex items-center gap-[6px] text-[12px] font-semibold">
+                <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="1.8"
+                    class="w-[13px] h-[13px]"
+                >
+                    <path d="M6 8H18L19 20H5L6 8Z"></path>
+                    <path d="M9 8V6C9 4.3 10.3 3 12 3C13.7 3 15 4.3 15 6V8"></path>
+                </svg>
+
+                <span>BAG</span>
+            </button>
         </div>
     </header>
 
     <main>
         <section class="relative w-full h-[calc(100vh-66px)] overflow-hidden bg-[#f7f6f9]
-        bg-[linear-gradient(to_right,rgba(0,0,0,0.08)_1px,transparent_1px),linear-gradient(to_bottom,rgba(0,0,0,0.08)_1px,transparent_1px)]
-        bg-[size:20%_25%]">
+        bg-[linear-gradient(to_right,rgba(0,0,0,0.06)_1px,transparent_1px),linear-gradient(to_bottom,rgba(0,0,0,0.06)_1px,transparent_1px)]
+        bg-[size:20%_33.333%]
+        ">
+            <div class="absolute left-[5vw] top-[20%] w-[30vw] z-30">
+                <p class="text-[25px] leading-[1.5] tracking-[-0.04em] font-normal">
+                    <span class="block ml-[9.7vw]">
+                        MADDY IS BUILT FOR THOSE WHO
+                    </span>
 
-            <div class="absolute left-[5vw] top-[25%] w-[20vw] z-30"></div>
-                <p class="text-[12px] leading-[1.5]">
-                    MADDY IS BUILT FOR THOSE WHO
-                    CHOOSE FORM OVER NOISE —
-                    AND LET THE WORK SPEAK
-                    WHERE WORDS DON'T HAVE TO
+                    <span class="block">
+                        CHOOSE FORM OVER NOISE — AND LET THE WORK
+                    </span>
+
+                    <span class="block">
+                        SPEAK WHERE WORDS DON'T HAVE TO
+                    </span>
                 </p>
-            </div>
+            
 
-                <button  class="mt-[30px] px-[20px] py-[12px] border border-black bg-transparent text-[11px]">
+                <button  class="mt-[20px] w-[300px] bg-[#2b2b2b] text-white px-[80px] py-[15px] rounded-[8px] text-[15px] font-medium tracking-[0.03em] flex items-center justify-between">
                     SHOP THE DROP →
                 </button>
+            </div>
 
             <img src="assets/model.jpg" alt="MADDY fashion model"
-                class="absolute left-1/2 bottom-0 -translate-x-1/2 w-[45vw]">
+                class="absolute left-1/2 bottom-0 -translate-x-1/2 scale-x-[1.05] w-[35vw] z-10">
 
-            <h1 class="absolute left-1/2 bottom-[8vh] -translate-x-1/2 z-20 text-[10vw] font-normal whitespace-nowrap">
+            <h1 class="absolute left-1/2 bottom-[3vh] -translate-x-1/2 z-20 text-[15vw] font-normal whitespace-nowrap text-white mix-blend-difference">
             SPEAK QUIET
             </h1>
 
-            <div class="absolute right-[5vw] top-[25%] w-[12vw] z-30">
-                <p class="text-[11px] leading-[1.5]">
-                    FASHION WITHOUT THE SHOUT
-                </p>
+            <div class="absolute right-[10vw] top-[40%] w-[10vw] z-30">
+                <p class="text-[18px] leading-[1.5] tracking-[0.05em] font-normal">
+                    <span class="block">
+                        FASHION WITHOUT 
+                    </span>
 
-                <p class="mt-[30px] text-[11px] leading-[1.5]">
-                    A QUIET ANSWER TO LOUD FASHION BRANDING
+                    <span class="block text-right pr-[20px]">
+                        THE SHOUT
+                    </span>
                 </p>
             </div>
 
