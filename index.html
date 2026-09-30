@@ -11,18 +11,18 @@
 </head>
 
 <body>
-    <header class="flex items-center justify-between h-[70px] px-[30px]">
-        <div class="font-semibold text-[23px]">
+    <header class="grid grid-cols-[1fr_auto] lg:grid-cols-[1fr_auto_1fr] items-center h-[70px] px-[20px] lg:px-[30px]">
+        <div class="font-semibold text-[18px] lg:text-[23px] justify-self-start">
             MADDY
         </div>
 
-        <nav class="flex gap-[60px] font-semibold">
+        <nav class="hidden lg:flex gap-[60px] font-semibold">
             <a href="#" class="text-[18px]">SHOP</a>
             <a href="#" class="text-[18px]">ABOUT</a>
             <a href="#" class="text-[18px]">CONTACT</a>
         </nav>
     
-        <div class="flex gap-[20px] font-semibold">
+        <div class="flex gap-[20px] font-semibold justify-self-end">
             <button class="flex items-center gap-[6px] text-[12px] font-semibold">
                 <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -30,13 +30,13 @@
                     fill="none"
                     stroke="currentColor"
                     stroke-width="1.8"
-                    class="w-[13px] h-[13px]"
+                    class="w-[20px] h-[20px] lg:w-[28px] lg:h-[28px]"
                 >
                     <circle cx="11" cy="11" r="7"></circle>
                     <path d="M20 20L16.5 16.5"></path>
                 </svg>
 
-                <span>SEARCH</span>
+                <span class="hidden sm:inline">SEARCH</span>
             </button>
 
             <button class="flex items-center gap-[6px] text-[12px] font-semibold">
@@ -46,14 +46,19 @@
                     fill="none"
                     stroke="currentColor"
                     stroke-width="1.8"
-                    class="w-[13px] h-[13px]"
+                    class="w-[20px] h-[20px] lg:w-[28px] lg:h-[28px]"
                 >
                     <path d="M6 8H18L19 20H5L6 8Z"></path>
                     <path d="M9 8V6C9 4.3 10.3 3 12 3C13.7 3 15 4.3 15 6V8"></path>
                 </svg>
 
-                <span>BAG</span>
+                <span class="hidden sm:inline">BAG</span>
             </button>
+            <button class="lg:hidden text-[22px]">
+                ☰
+            </button>
+
+
         </div>
     </header>
 
